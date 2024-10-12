@@ -22,15 +22,15 @@ El movimiento del brazo consiste en escribir la palabra "Taco" con el uso de los
 3. Usando el comando **Move** mover el plumón a los puntos necesarios para terminar de escribir la letra T.
 4. Regresar a la posición Intermedia para posteriormente continuar con la siguiente letra.
 5. Bajar el plumón al primer punto de la letra "a" con el comando **Go**.
-6. Usando el comando **Go** mover el plumón al segundo punto de la letra "a".
-7. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el segundo, tercero y cuarto punto para terminar de escribir la letra "a".
+6. Usando el comando **Move** mover el plumón al segundo punto de la letra "a".
+7. Usando el comando **Arc3** mover el plumón en un arco tomando de referencia el segundo, tercero y cuarto punto para terminar de escribir la letra "a".
 8. Regresar a la posición Intermedia para posteriormente continuar con la siguiente letra.
 9. Bajar el plumón al primer punto de la letra "c" con el comando **Go**.
-10. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para escribir la letra "c".
+10. Usando el comando **Arc3** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para escribir la letra "c".
 11. Regresar a la posición Intermedia para posteriormente continuar con la última letra.
 12. Bajar el plumón al primer punto de la letra "o" con el comando **Go**.
-13. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para realizar la primer mitad de la letra "o".
-14. Posteriormente se sigue usando el comando **Arc** para mover el plumón en un arco tomando de referencia el tercero, cuarto y primer punto para realizar la segunda mitad de la letra "o".
+13. Usando el comando **Arc3** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para realizar la primer mitad de la letra "o".
+14. Posteriormente se sigue usando el comando **Arc3** para mover el plumón en un arco tomando de referencia el tercero, cuarto y primer punto para realizar la segunda mitad de la letra "o".
 15. Finalmente regresar a la posicion **Home**.
 
 
@@ -40,25 +40,28 @@ El movimiento del brazo consiste en escribir la palabra "Taco" con el uso de los
 De tal manera que el codigo desarrollado quedo de la siguiente manera:
 ```
 Function main
-	
-	Integer i
-	For i = 0 To 3
-		On 2
-		Go Posicion0
-		Go Posicion1
-		Off 2
-		Go Posicion0
-		Go Posicion2
-		Go Posicion3 +Z(i * 12)
-		On 2
-		Go Posicion2
-	
-	Next
-	
+	Home
+	Go Inicial
+	Go T1
+	Move T2
+	Move T3
+	Move T4
+	Go Inicial
+	Go a1
+	Move a2
+	Arc3 a3,a4
+	Go Inicial
+	Go c1
+	Arc3 c2,c3
+	Go Inicial
+	Go o1
+	Arc3 o2,o3
+	Arc3 o4,o1
+	Home
 
 Fend
 ```
-![Resultado final de la práctica](![Practica_5Robotica](https://github.com/user-attachments/assets/1ff865e9-4b88-448d-a87d-3bdb2ecae763))
+![Practica_5Robotica](https://github.com/user-attachments/assets/1ff865e9-4b88-448d-a87d-3bdb2ecae763)
 
 
 En el siguiente video se muestra el movimiento realizado utilizando el código anterior, cuyo objetivo fue escribir la palabra "Taco" con el uso de diferentes comandos de movimientos. Este proceso demuestra el correcto funcionamiento del sistema y cumple con los objetivos establecidos para la práctica
