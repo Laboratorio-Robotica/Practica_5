@@ -5,14 +5,14 @@
 - Eduardo David Salas Ayala
 ## Introducción:  
 La práctica tiene como objetivo programar una trayectoria de varios movimientos para el brazo robótico Epson utilizando diferentes comandos de movimientos (Control de punto a punto, Movimiento linealy Curvas) con el fin de escribir una palabra en una hoja. Los comandos utilizados para poder realizar el movimiento necesario para escribir las letras fueron los siguientes: 
--  **Home** (Reposo) mueve el robot a una posición de "espera" o "descanso".
--  **Go** Se mueve directamente a un punto con un movimiento de punto a punto.
--  **Jump** Salta a un punto. Primero se mueve hasta la configuración actual de LimZ, luego hasta el punto de destino y luego al punto. La configuración de la tabla Arch determina el perfil de Jump.
--  **Jump3** Salta a un punto en 3 dimensiones. Se mueve en una línea recta con la misma orientación hasta el punto de retroceso. El movimiento entre los puntos de retroceso es un movimiento PTP.
--  **Pass** Se mueve cerca de uno o más puntos.
--  **Move** Se mueve en una línea recta al punto especificado.
--  **Arc** Mueve el robot a través de un punto a otro usando una interpolación circular.
--  **Arc3** Mueve el robot en 3D con una interpolación circular.
+-  **Home** -- (Reposo) mueve el robot a una posición de "espera" o "descanso".
+-  **Go** -- Se mueve directamente a un punto con un movimiento de punto a punto.
+-  **Jump** -- Salta a un punto. Primero se mueve hasta la configuración actual de LimZ, luego hasta el punto de destino y luego al punto. La configuración de la tabla Arch determina el perfil de Jump.
+-  **Jump3** -- Salta a un punto en 3 dimensiones. Se mueve en una línea recta con la misma orientación hasta el punto de retroceso. El movimiento entre los puntos de retroceso es un movimiento PTP.
+-  **Pass** -- Se mueve cerca de uno o más puntos.
+-  **Move** -- Se mueve en una línea recta al punto especificado.
+-  **Arc** -- Mueve el robot a través de un punto a otro usando una interpolación circular.
+-  **Arc3** -- Mueve el robot en 3D con una interpolación circular.
 
 ## Instrucciones
 
