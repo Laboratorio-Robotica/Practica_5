@@ -4,7 +4,7 @@
 - Pablo Axel Silva Fuentes
 - Eduardo David Salas Ayala
 ## Introducción:  
-La práctica tiene como objetivo programar una trayectoria de varios movimientos para el brazo robótico Epson utilizando diferentes comandos de movimientos (Control de punto a punto, Movimiento linealy Curvas) con el fin de escribir una palabra en una hoja. Los comandos utilizados para poder realizar el movimiento necesario para escribir las letras fueron los siguientes: 
+La práctica tiene como objetivo programar una trayectoria de varios movimientos para el brazo robótico Epson utilizando diferentes comandos de movimientos (Control de punto a punto, Movimiento linealy Curvas) con el fin de escribir una palabra en una hoja con un plumón que la pinza está sujetando. Los comandos utilizados para poder realizar el movimiento necesario para escribir las letras fueron los siguientes: 
 -  **Home** -- (Reposo) mueve el robot a una posición de "espera" o "descanso".
 -  **Go** -- Se mueve directamente a un punto con un movimiento de punto a punto.
 -  **Jump** -- Salta a un punto. Primero se mueve hasta la configuración actual de LimZ, luego hasta el punto de destino y luego al punto. La configuración de la tabla Arch determina el perfil de Jump.
@@ -16,16 +16,22 @@ La práctica tiene como objetivo programar una trayectoria de varios movimientos
 
 ## Instrucciones
 
-El movimiento del brazo consiste en recoger 4 objetos (fusible 1, fusbible 2, fusible 3 y fusible 4) desde el mismo punto, e ir apilando uno encima de otro en un punto definido por el profesor, haciendo uso del comando "for" para su comprencion.
-1. Mover desde el origen hacia una posición sobre el surtidor de fusibles y abrir la garra para, posteriormente, bajar hacia el fusible.
-2. Cerrar la garra tomando el fusible 1 y subir a la posición anterior.
-3. Dirigirse a la posición donde serán apilados.
-4. Bajar la garra hacia donde será colocado el fusible.
-5. Abrir la garra para soltar el fusible.
-6. Volver a la posición HOME inicial.
-7. Repetir del paso 1 al 6 usando el ciclo "for", con una variación en "Z".
-8. Completar los 4 ciclos para la apilación de los fusibles.
-9. Finalmente, terminar en la posición HOME para concluir el ejercicio.
+El movimiento del brazo consiste en escribir la palabra "Taco" con el uso de los comandos de movimeinto previamente establecidos.
+1. Mover desde el origen hacia una posición cercana (Intermedia) a la hoja para agilizar el proceso.
+2. Bajar el plumón al primer punto de la letra "T" con el comando **Move**.
+3. Usando el comando **Move** mover el plumón a los puntos necesarios para terminar de escribir la letra T.
+4. Regresar a la posición Intermedia para posteriormente continuar con la siguiente letra.
+5. Bajar el plumón al primer punto de la letra "a" con el comando **Go**.
+6. Usando el comando **Go** mover el plumón al segundo punto de la letra "a".
+7. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el segundo, tercero y cuarto punto para terminar de escribir la letra "a".
+8. Regresar a la posición Intermedia para posteriormente continuar con la siguiente letra.
+9. Bajar el plumón al primer punto de la letra "c" con el comando **Go**.
+10. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para escribir la letra "c".
+11. Regresar a la posición Intermedia para posteriormente continuar con la última letra.
+12. Bajar el plumón al primer punto de la letra "o" con el comando **Go**.
+13. Usando el comando **Arc** mover el plumón en un arco tomando de referencia el primer, segundo y tercero punto para realizar la primer mitad de la letra "o".
+14. Posteriormente se sigue usando el comando **Arc** para mover el plumón en un arco tomando de referencia el tercero, cuarto y primer punto para realizar la segunda mitad de la letra "o".
+15. Finalmente regresar a la posicion **Home**.
 
 
 
@@ -53,7 +59,7 @@ Function main
 Fend
 ```
 
-En el siguiente video se muestra el movimiento realizado utilizando el código anterior, cuyo objetivo fue apilar una serie de fusibles. Este proceso demuestra el correcto funcionamiento del sistema y cumple con los objetivos establecidos para la práctica
+En el siguiente video se muestra el movimiento realizado utilizando el código anterior, cuyo objetivo fue escribir la palabra "Taco" con el uso de diferentes comandos de movimientos. Este proceso demuestra el correcto funcionamiento del sistema y cumple con los objetivos establecidos para la práctica
 
 https://drive.google.com/drive/folders/1LNkZFlLKDiIUVDZCGS-185doGVwsoqju?usp=drive_link
 
@@ -70,4 +76,4 @@ De primera instancia la práctica resultó fundamental para entender la implemen
 La práctica fue aprovechada para la comprensión del ciclo 'for' aplicado en el programa Epson RC+. Por lo tanto, el problema inicial fue de gran ayuda para analizar y comprender cómo se puede programar el ciclo. Además, se conoció una nueva posibilidad dentro de la aplicación, que fue hacer pequeñas variaciones en Z, lo que permitió ajustarla desde la sección de programación, pudiendo variar los puntos guardados.
 
 ## Referencias bibliográficas
-- Localización y planificación de trayectorias - TEKNIKER. (s. f.). https://www.tekniker.es/es/localizacion-y-planificacion-de-trayectorias
+- Epson (2020). EPSON RC+ 7.0 Manual del usuario Administración y desarrollo de proyectos (Ver.7.3). https://files.support.epson.com/far/docs/epson_rc_pl_70_users_guide_spanish_(v73r2).pdf
