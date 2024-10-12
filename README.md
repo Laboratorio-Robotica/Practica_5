@@ -1,6 +1,6 @@
 # Practica_5
 ## Integrantes:  
-- Francisco javier Godinez Lopez
+- Francisco Javier Godinez Lopez
 - Pablo Axel Silva Fuentes
 - Eduardo David Salas Ayala
 ## Introducción:  
@@ -58,6 +58,8 @@ Function main
 
 Fend
 ```
+![Resultado final de la práctica](![Practica_5Robotica](https://github.com/user-attachments/assets/1ff865e9-4b88-448d-a87d-3bdb2ecae763))
+
 
 En el siguiente video se muestra el movimiento realizado utilizando el código anterior, cuyo objetivo fue escribir la palabra "Taco" con el uso de diferentes comandos de movimientos. Este proceso demuestra el correcto funcionamiento del sistema y cumple con los objetivos establecidos para la práctica
 
