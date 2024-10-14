@@ -70,15 +70,15 @@ https://drive.google.com/drive/folders/1LNkZFlLKDiIUVDZCGS-185doGVwsoqju?usp=dri
 
 ## Conclusiones:  
 ### Francisco Javier Godinez Lopez:
-La práctica fue esencial para entender cómo utilizar el ciclo 'for' en el programa Epson RC+.Desde el principio, la práctica ha permitido investigar y adquirir conocimientos sobre cómo gestionar y organizar este proceso de forma eficaz. También se encontró una característica extra en la plataforma, la posibilidad de realizar cambios pequeños en la dimensión Z, lo que simplificó la edición de los puntos ya guardados directamente en el código ademas que la apliacion de fusibles fue de gran ayuda, resolviendo el problema eficazmente.
+La práctica fue importante para comprender la programación de trayectorias del brazo robótico Epson utilizando comandos como Move, Go, y Arc3. El ejercicio permitió aplicar estos comandos de manera secuencial para escribir la palabra "Taco", lo que reforzó el conocimiento de los diferentes tipos de movimientos y cómo  afecta la precisión del robot, cumpliendo satisfactoriamente con los objetivos planteados.
 
 
 ### Pablo Axel Silva Fuentes: 
-De primera instancia la práctica resultó fundamental para entender la implementación del ciclo 'for' en el software Epson RC+. El ejercicio inicial ofreció una oportunidad para explorar y aprender cómo estructurar y controlar dicho ciclo. Asimismo, se encontró una nueva característica en la apliacion la posibilidad de realizar pequeñas alteraciones en el eje Z, lo que hizo más sencillo realizar ajustes directamente en el código y cambiar los puntos guardados anteriormente.
+La práctica fue crucial para entender cómo se pueden combinar los diferentes comandos de movimiento del brazo robótico Epson para lograr una tarea precisa como escribir "Taco". A través del uso de Move y Arc3, se aprendió a controlar los movimientos del robot con exactitud. Además, el descubrimiento de la posibilidad de ajustar directamente los puntos en el código hizo que fuera más fácil optimizar el trabajo en el eje Z, mejorando el proceso de escritura y contribuyendo al éxito del proyecto.
 
 
 ### Eduardo David Salas Ayala: 
-La práctica fue aprovechada para la comprensión del ciclo 'for' aplicado en el programa Epson RC+. Por lo tanto, el problema inicial fue de gran ayuda para analizar y comprender cómo se puede programar el ciclo. Además, se conoció una nueva posibilidad dentro de la aplicación, que fue hacer pequeñas variaciones en Z, lo que permitió ajustarla desde la sección de programación, pudiendo variar los puntos guardados.
+Esta práctica permitió una mejor comprensión de cómo se utilizan los comandos básicos y avanzados de movimiento en el software Epson RC+ para controlar el brazo robótico. El uso de Go, Move, y Arc3 para escribir la palabra "Taco" fue un ejercicio clave para aplicar los conocimientos adquiridos. También se aprovechó la función de ajustar la posición Z directamente en el código, lo que simplificó la edición de los puntos y ayudó a refinar los movimientos del robot.
 
 ## Referencias bibliográficas
 - Epson (2020). EPSON RC+ 7.0 Manual del usuario Administración y desarrollo de proyectos (Ver.7.3). https://files.support.epson.com/far/docs/epson_rc_pl_70_users_guide_spanish_(v73r2).pdf
