@@ -66,7 +66,7 @@ Fend
 
 En el siguiente video se muestra el movimiento realizado utilizando el código anterior, cuyo objetivo fue escribir la palabra "Taco" con el uso de diferentes comandos de movimientos. Este proceso demuestra el correcto funcionamiento del sistema y cumple con los objetivos establecidos para la práctica
 
-https://drive.google.com/drive/folders/1LNkZFlLKDiIUVDZCGS-185doGVwsoqju?usp=drive_link
+[https://drive.google.com/drive/folders/1LNkZFlLKDiIUVDZCGS-185doGVwsoqju?usp=drive_link](https://drive.google.com/drive/folders/1w3g0eCcPn4odeIJwMxbitkLx1k_9205J?usp=sharing)
 
 ## Conclusiones:  
 ### Francisco Javier Godinez Lopez:
